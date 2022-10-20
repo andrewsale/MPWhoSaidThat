@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import plotly.express as px
-import sns
+import seaborn as sns
 from time import time
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.metrics import accuracy_score, log_loss
