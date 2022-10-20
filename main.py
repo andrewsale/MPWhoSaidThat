@@ -34,7 +34,7 @@ https://labour.org.uk/category/latest/, \
 https://www.conservatives.com/news')
 speech = st.text_area("Enter the speech here then press 'Make prediction' below: ")
 
-if st.button('Make prediction'):
+if st.button('Make prediction') or speech:
 
     pred = speech_predict(speech, model, overlap = 90)
 
