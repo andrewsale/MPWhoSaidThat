@@ -30,4 +30,4 @@ When a speech of length more than 100 words is fed to the model, the speech is f
 * `scraping.py`: the script used to scrape the speeches from the two websites.
 * `wrangling.ipynb`: the principal task performed by this notebook is to assign speakers (and hence parties) to each speech.
 * `create_samples.ipynb`: notebook used to take random samples from the scraped speeches and create train, validation and test sets (this split was done on the speech level, before sampling, to avoid data leakage). 
-* `test_yourself.py`: a second streamlit app that allows you to test your performance at recognizing speeches as Labour or Conservative <a href='https://andrewsale-mpwhosaidthat-test-yourself-t8bun2.streamlitapp.com'>(click here)</a>.
+* `test_yourself.py`: a second streamlit app that allows you to test your performance at recognizing speeches as Labour or Conservative <a href='https://rebrand.ly/labourortory'>(click here)</a>.
