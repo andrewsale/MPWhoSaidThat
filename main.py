@@ -1,8 +1,21 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
-from helper_functions import speech_predict
 
+def speech_predict(speech, model, overlap = 50):
+    split_speech = speech.split()
+    length = len(split_speech)
+    if length < 100:
+        segments = [speech]
+    else:
+        segments = []
+        i=0
+        while i <= length - 100:
+            segments.append(' '.join(split_speech[i:i+100]))
+            i+=(100-overlap)
+    preds = model.predict(segments, verbose=0)
+    pred = np.sum(preds)/len(preds)
+    return pred
 
 # @st.cache(allow_output_mutation=True)
 @st.experimental_singleton
