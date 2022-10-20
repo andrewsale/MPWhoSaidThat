@@ -6,7 +6,7 @@
 
 In the app you can enter the text of a real speech given by a politician, or make up your own. It will then predict if the speech was given by someone from the left-leaning Labour Party, or the right-leaning Conservative Party.
 
-<a href='https://rebrand.ly/whosaidthat' target='_blank'>Click here to see the app in action.</a>
+<a href='https://rebrand.ly/whosaidthat'>Click here to see the app in action.</a>
 
 ## The AI behind the app
 
