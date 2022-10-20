@@ -4,12 +4,7 @@ import os
 
 @st.cache(allow_output_mutation=True)
 def initialize():
-    # df_samples = pd.read_csv('Sampled_speeches/test.csv').sample(frac=1)
-    for root, dirs, files in os.walk(".", topdown=False):
-        for name in files:
-            st.write(os.path.join(root, name))
-        for name in dirs:
-            st.write(os.path.join(root, name))
+    df_samples = pd.read_csv('./Sampled_speeches/test.csv').sample(frac=1)
     record=[]
     return df_samples, record
 
