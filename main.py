@@ -48,3 +48,8 @@ if st.button('Make prediction') or speech:
         prob = pred
     st.write(f'*We predict this speech was given by a*  **{prediction}**  *speaker*.')
     st.write(f'Probability of accuracy:  {prob*100:.0f} %')
+st.write('About the model: it was trained on extracts from\
+         speeches made by Labour and Conservative politicians.\
+            The extracts are mostly 100 words in length, though\
+            some are shorter. Consequently, the model does not perform well\
+            on short phrases, like "The NHS should be privatised".')
