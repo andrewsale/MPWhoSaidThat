@@ -3,7 +3,7 @@ import streamlit as st
 
 @st.cache(allow_output_mutation=True)
 def initialize():
-    df_samples = pd.read_csv('./Sampled_speech/train.csv').sample(frac=1)
+    df_samples = pd.read_csv('./Sampled_speech/test.csv').sample(frac=1)
     record=[]
     return df_samples, record
 
