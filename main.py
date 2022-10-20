@@ -7,7 +7,7 @@ from helper_functions import speech_predict
 # @st.cache(allow_output_mutation=True)
 @st.experimental_singleton
 def get_model():
-    model = tf.keras.models.load_model('v2/Model')
+    model = tf.keras.models.load_model('Model')
     model.make_predict_function() 
     return model
     
