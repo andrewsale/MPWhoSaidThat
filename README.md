@@ -8,6 +8,8 @@ In the app you can enter the text of a real speech given by a politician, or mak
 
 <a href='https://andrewsale.github.io/MP-app.github.io/'>Click here to see the app in action.</a>
 
+<a href="https://medium.com/@andrew.w.sale/deploying-text-classification-from-keras-to-tensorflow-js-92c614dca4ec">Click here to read the blog post.</a>
+
 ## The AI behind the app
 
 A neural network was trained on samples from speeches scraped from <a href='https://www.ukpol.co.uk/'>www.ukpol.co.uk/</a> and <a href='http://www.britishpoliticalspeech.org/speech-archive.htm'>www.britishpoliticalspeech.org</a>.
